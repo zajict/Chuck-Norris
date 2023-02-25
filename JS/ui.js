@@ -3,8 +3,9 @@
 
 export const randomJoke = (joke) => {
     const jokeParagraph = document.querySelector('#random-joke-box');
-    jokeParagraph = `<p>${
+    let paragraph = `<p id="joke">${
         joke.value
         }</p>`
+        jokeParagraph.innerHTML = paragraph;
     };
 

@@ -1,18 +1,11 @@
 class Joke {
-    constructor(icon_url, value) {
-        this.icon_url = icon_url;
+    constructor(value) {
         this.value = value;
     };
 };
 
-export const FetchJoke = () => {
-    fetch('https://api.chucknorris.io/jokes/random').then(response => {
-        if (response.ok) {
-            return response.json();
-        } else {
-            throw new Error('Failed Chuck Norris joke load.');
-        }
-    })
-    .then(res =>  res.json()).then(joke => new Joke(joke.icon_url, joke.value))
-    .catch(error => console.error(error));
+export const fetchJoke = () => {
+    return fetch("https://api.chucknorris.io/jokes/random")
+    .then(res =>  res.json()).then(joke => new Joke(joke.value))
+    .catch(error => console.log(error));
 };

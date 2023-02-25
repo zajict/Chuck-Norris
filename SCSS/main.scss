@@ -36,7 +36,7 @@ main {
         justify-content: center;
         margin-top: 50px;
     }
-    #button {
+    button {
         background-color:  rgb(81, 119, 201);
         border: none;
         height: 30px;
@@ -45,9 +45,33 @@ main {
         width: 100%;
         border-radius: 15px;
     }
-    #button:hover {
+    button:hover {
         color: rgb(39, 2, 2);
         box-shadow: rgba(244, 244, 245, 0.621) 0px 30px 60px -12px inset;
         
+    }
+    .joke-box, #random-joke-box, #random-joke-area {
+        background: black !important;
+    }
+
+    #random-joke-area {
+        width: 70%;
+        margin: 0 auto;
+    }
+    #random-joke-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        max-width: 960px;
+        width: 960px;
+        padding-left: 30px;
+        padding-right: 30px;
+        max-height: 200px;
+        height: 200px;
+    }
+    p {
+        color: white;
     }
 }
