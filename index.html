@@ -5,8 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chuck Norris</title>
+    <link rel="stylesheet" href="./CSS/main.css">
 </head>
 <body>
-    
+    <main class="container-fluid d-flex justify-content-center align-items-center">
+        <div id="img-area" class="row justify-content-center align-items-center">
+            <div class="col-md-auto" id="img-box">
+                <img src="https://api.chucknorris.io/img/chucknorris_logo_coloured_small@2x.png" alt="" id="chuck-norris-img">
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div id="random-joke-area" class="row align-items-center">
+                <div class="Chuck-norris-joke col-md-auto text-center" id="random-joke-box"></div>
+            </div>
+        </div>
+        <div class="container-fluid row align-items-center text-center">
+            <div class="col-md-auto" id="button-area">
+                <button class="button" id="button">Click for a Chuck Norris joke</button>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="./JS/app.js"></script>
 </body>
 </html>
