@@ -10,7 +10,7 @@ export const FetchJoke = () => {
         if (response.ok) {
             return response.json();
         } else {
-            throw new Error('Failed Chuck Norris joke.');
+            throw new Error('Failed Chuck Norris joke load.');
         }
     })
     .then(res =>  res.json()).then(joke => new Joke(joke.icon_url, joke.value))
