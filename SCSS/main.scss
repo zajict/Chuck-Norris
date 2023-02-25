@@ -1,3 +1,6 @@
+body {
+    background: black;
+}
 main {
     width: 70%;
     margin: 0 auto;
@@ -11,7 +14,40 @@ main {
         img {
             width: 70%;}
     }
-    #random-joke-box {
+    #random-joke-area {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
 
+        #random-joke-box {
+            text-decoration: none;
+            text-align: left;
+            border: 1px solid rgb(110, 45, 13);
+            box-shadow: rgba(223, 222, 235, 0.607) 0px 1px 4px;
+            background-color: white;
+            color:white;
+        }
+    }
+    #button-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    #button {
+        background-color:  rgb(81, 119, 201);
+        border: none;
+        height: 30px;
+        cursor: pointer;
+        color: white;
+        width: 100%;
+        border-radius: 15px;
+    }
+    #button:hover {
+        color: rgb(39, 2, 2);
+        box-shadow: rgba(244, 244, 245, 0.621) 0px 30px 60px -12px inset;
+        
     }
 }
